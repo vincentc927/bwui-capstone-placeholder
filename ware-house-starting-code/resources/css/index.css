@@ -1,0 +1,284 @@
+.hero {
+  width: 100%;
+  height: 21.75rem;
+  margin-top: 3rem;
+  border-radius: 1.5rem;
+  background-image: url('../img/home/hero.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 300px 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.hero h2 {
+  font-family: Helvetica;
+  font-weight: bold;
+  justify-content: center;
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.shopcat {
+  color: #45a19a;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-align: center;
+  padding: 0px 0px 20px 0px;
+}
+
+.products {
+  padding: 50px 0px 50px 0px;
+}
+
+.products h2 {
+  margin-top: 2rem;
+  font-size: inherit;
+}
+
+h2 .shopd {
+  color: #ffffff;
+  background-color: #67ccc4;
+  width: 300px;
+  font-size: 24px;
+  padding: 10px 10px 10px 10px;
+  justify-content: center;
+  border: 3px solid #ffffff;
+  cursor: pointer;
+}
+
+.cat-grid {
+  display: grid;
+  grid-template-columns: 0px repeat(4, 1fr) 0px;
+  grid-column-gap: 10px;
+  justify-content: center;
+  background-color: inherit;
+}
+
+.living {
+  grid-column-start: 2;
+}
+
+.bedroom {
+  grid-column-start: 3;
+
+}
+.bathroom {
+  grid-column-start: 4;
+
+}
+.dining-room {
+  grid-column-start: 5;
+
+}
+
+.product-list {
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+
+}
+
+.recent {
+  color: #45a19a;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-align: center;
+  padding: 0px 0px 50px 0px;
+}
+
+h3 {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 20px;
+}
+
+
+.categories h3 {
+  margin-bottom: 0;
+}
+
+
+
+@media only screen and (max-width: 1020px) {
+  .landing .product-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .landing .product-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cat-grid {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    grid-gap: 10px 10px;
+  }
+
+  .living {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .bedroom {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .bathroom {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+
+  .dining-room {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+@media only screen and (max-width: 810px) {
+  .landing .product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cat-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px 10px;
+  }
+
+  .living {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .bedroom {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .bathroom {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .dining-room {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  .hero {
+    width: 810px;
+  }
+
+  .hero {
+    width: 100%;
+    height: 21.75rem;
+    margin-top: 3rem;
+    border-radius: 1.5rem;
+    background-image: url('../img/home/hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 300px 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .hero h2 {
+    font-family: Helvetica;
+    font-weight: bold;
+    justify-content: center;
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  .products {
+    padding: 0 5rem 6rem 5rem;
+  }
+
+  .products h2 {
+    margin-top: 2rem;
+    font-size: inherit;
+  }
+
+  h2 .shopd {
+    color: #ffffff;
+    background-color: #67ccc4;
+    width: 300px;
+    font-size: 24px;
+    padding: 10px 10px 10px 10px;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .shopcat {
+    padding-top: 50px;
+  }
+
+}
+
+@media only screen and (max-width: 565px) {
+  .cat-grid {
+    display: grid;
+    width: 100%;
+    grid-template: repeat(4, 1fr) / 1fr 500px 1fr;
+    grid-gap: 10px 10px;
+  }
+
+  .hero {
+    width: 100%;
+    height: 17.75rem;
+    margin-top: 1rem;
+    border-radius: 1.5rem;
+    background-image: url('../img/home/hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #ffffff;
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr 300px 1fr;
+  }
+
+  .cat-grid {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(1, 1fr);
+    grid-column-gap: 10px;
+  }
+
+  .living {
+    grid-area: 1 / 1 / 2 / 2;
+    width: 100%;
+  }
+
+  .bedroom {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .bathroom {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .dining-room {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+
+  .product-list {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .landing .product-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+@media only screen and (max-width: 170px) {
+  .landing .product-list {
+    grid-template-columns: 1fr;
+  }
+}

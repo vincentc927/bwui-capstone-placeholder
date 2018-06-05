@@ -1,0 +1,121 @@
+#main {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.cart-title {
+  color: #000000;
+  font-size: 42px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-align: center;
+  padding: 50px 0px 50px 0px;
+}
+
+.shopping-cart {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 3rem;
+  border: 1px solid #D9D9D9;
+  padding: 0rem 1rem 0rem 0rem;
+  background-color: #ffffff;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column: 1/4;
+  padding: 1.5rem 0rem 1.5rem 0rem;
+  border-bottom: 1px solid #D9D9D9;
+  margin-left: 1.5rem;
+}
+
+#no-border {
+  border-bottom: none;
+}
+
+input {
+  width: 3rem;
+  padding-left: 1rem;
+}
+
+.total {
+  grid-column: 4;
+  grid-row: 1/4;
+  border-left: 1px solid hsla(0, 0%, 85%, 1);
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem 0rem;
+}
+
+.product-item h3 {
+  margin-bottom: .75rem;
+  color: hsla(0, 0%, 29%, 1);
+}
+
+.product-item .price {
+  color: hsla(0, 0%, 29%, 1);
+}
+
+.description {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.total .description h3{
+  float: left;
+}
+.total .description span{
+  float: right;
+  padding-bottom: 2rem;
+}
+
+#main .button {
+  box-sizing: border-box;
+  padding: 0.875rem 5rem;
+  border-radius: 54px;
+  margin-left: 1rem;
+}
+
+@media only screen and (max-width: 1020px) {
+  .landing .product-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media only screen and (max-width: 760px) {
+  .landing .product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media only screen and (max-width: 490px) {
+  .landing .product-list {
+    grid-template-columns: 1fr;
+  }
+
+  .product-list-section h2 {
+    text-align: left;
+    color: #000000;
+    margin-left: -250px;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column: 1/4;
+    width: 300px;
+  }
+
+  .total {
+    margin-top: -150px;
+    border-left: none;
+  }
+
+  .cart-title {
+    margin-left: -250px;
+  }
+}
